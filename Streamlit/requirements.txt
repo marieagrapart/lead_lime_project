@@ -1,0 +1,12 @@
+psycopg2-binary
+boto3 
+pandas 
+gunicorn 
+streamlit 
+scikit-learn 
+matplotlib 
+seaborn 
+plotly 
+openpyxl
+requests
+datetime
