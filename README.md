@@ -14,6 +14,9 @@ We had to set up a proof of concept for a data pipeline with technologies like K
 
 The [schematics](./docs/) are visible in the docs folder.
 
+Here, ou principal architecture :
+![Effective Data Pipeline](./docs/Lime%20-%20Data%20Pipeline%20(effective).png)
+
 [Slide Presentation](./docs/Lime%20-%20Lead%20project%20.pptx) too.
 
 DESCRIPTION
