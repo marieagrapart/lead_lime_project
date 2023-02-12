@@ -8,21 +8,21 @@ Collective project in 3 days with 3 collaborators : [Marie Agrapart](https://git
 
 We were a team of data engineers at Lime. We had to use the open data from the City of Paris API regarding the coordinates of velib stations and the availability of bikes.
 
+![image of map in Paris](./docs/velib-map.jpg)
+
 The goal was to tell Lime employees where they could place Lime electric scooters, on a map, by analyzing "real time" public bike availability deficits. 
 
 We had to set up a proof of concept for a data pipeline with technologies like Kafka, Airflow, Streamlit...
 
-The [schematics](./docs/) are visible in the docs folder.
+The [schematics](./docs/) are visible in the docs folder. [Slide Presentation](./docs/Lime%20-%20Lead%20project%20.pptx) too.
 
 Here, ou principal architecture :
 ![Effective Data Pipeline](./docs/Lime%20-%20Data%20Pipeline%20(effective).png)
 
-[Slide Presentation](./docs/Lime%20-%20Lead%20project%20.pptx) too.
 
 DESCRIPTION
 ------
 
-![image of map in Paris](./docs/velib-map.jpg)
 
 The producer.py script requests the open data API every minutes and sends about 1453 informations of bike availability (1 per station) with a Kafka Confluent Connector to a Postgres database (AWS RDS) wich store its, by overwriting the old information (we think of the planet!).
 
